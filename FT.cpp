@@ -3,15 +3,15 @@ using namespace std;
 
 int main() {
 
-	// DATA TRAVERSING
-/*	
+	// ARRAY TRAVERSING / display lang laman #1
+
 	int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 	int size = sizeof(arr) / sizeof(arr[0]);
 	
 	for (int i = 0; i < size; i++) {
 		cout << arr[i] << " ";
 	}
-*/	
+
 	// DATA EXTRACTION
 	
 	int n = 1234;
@@ -20,7 +20,7 @@ int main() {
 		n /= 10;
 	}
 	cout << n;
-	
+	// POS/EVEN NEG/POS #2
 	int size;
 	cout << "Enter the Size of the array: ";
 	cin >> size;
@@ -66,7 +66,7 @@ int main() {
 		cout << arr[i] << " is " << oddeven << " and " << sign << endl;;
 	}
 	
-	// HARD
+	// bibilangin kung ilang beses lumabas ung maraming dupe na num #3
 	
 		int size;
 
@@ -82,8 +82,6 @@ int main() {
 		cout << "Enter Number: " << "[" << i << "]: ";
 		cin >> arr[i];
 	}
-	
-
 	
 	for(int i = 0; i < size; i++) {
 		
@@ -130,7 +128,7 @@ int main() {
 
 	return 0;
 	
-	// TRAVERSING SHIT
+	// odd/even na may counter #4
 	
 	int n;
 	int arr[100] = {};	
@@ -163,5 +161,20 @@ int main() {
 		cout << "Num " << i + 1 << " : " << num << " " <<  oddeven << endl;
 	}	
 	
-
+	// CONSONANT / VOWELS CHECKER # 5
+		char letter;
+		
+		cout << "Enter a letter: ";
+		cin >> letter;
+		
+		if(letter >= 'A' && letter <= 'Z') {
+			letter = letter + 32;
+		}
+		if(letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o'|| letter == 'u') {
+			cout << letter << " is a vowel.";
+		}
+		else {
+			cout << letter << " is a consonant.";
+		}
+	
 }
